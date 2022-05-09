@@ -1,0 +1,35 @@
+//graphql querys
+{
+    quotes(name: "Phoebe"){
+        character
+        quote
+    }
+}
+
+{
+  friendship(nameOne:"Ross",nameTwo:"Emily") {
+    characterOne {
+      name
+    }
+    characterTwo {
+      name
+    }
+    status {
+      statusname
+    }
+  }
+}
+
+{
+  friendships(name:"Ross") {
+    status {
+      statusname
+    },
+    characterOne{
+      name
+    },
+    characterTwo {
+      name
+    }
+  }
+}
